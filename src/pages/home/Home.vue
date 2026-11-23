@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
 import { RouterLink } from 'vue-router'
+
 </script>
 
 <template>
   <div class="fondo-home">
      <section class="bg-amber-100 min-h-screen w-full text-amber-950 font-bold text-center flex flex-col md:flex-row">
     <header class="titulo flex min-h-[40vh] flex-col items-center justify-center gap-6 py-10 md:min-h-screen md:w-2/5">
-      <h1 class="text-4xl">Joaquin Sorolla y Batista</h1> 
+      <h1 class="text-4xl original-surfer-regular">Joaquin Sorolla y Batista</h1> 
 
       <p>El pintor de la luz del Mediterráneo</p>
 
@@ -82,5 +83,12 @@ import { RouterLink } from 'vue-router'
     min-height: 100vh;
   }
 }
+
+.original-surfer-regular {
+  font-family: "Original Surfer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 </style>

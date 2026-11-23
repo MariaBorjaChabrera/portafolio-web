@@ -3,6 +3,8 @@ import Lugares from "@/pages/Lugares/Lugares.vue";
 import Proceso from "@/pages/Proceso/Proceso.vue";
 import Personajes from "@/pages/Personajes/Personajes.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
+import { Layout } from "@lucide/vue";
+import Cuadros from "@/pages/Personajes/Cuadros.vue";
 
 
 export const router = createRouter({
@@ -26,8 +28,24 @@ export const router = createRouter({
     },
     {
       path: '/personajes',
-      name: 'personajes',
-      component: Personajes
+      children: [
+        {
+          path: '',
+          name: 'personajes',
+          component: Personajes
+        },
+        {
+            path: 'about',
+            component: Layout,
+            children: [
+              {
+                path: '',
+                name: 'personajes-about',
+                component: Cuadros
+              }
+            ]
+        }
+      ]
     },
     {
       path: '/:patchMatch(.*)',
