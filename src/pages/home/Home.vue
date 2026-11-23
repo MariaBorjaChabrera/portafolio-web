@@ -19,7 +19,7 @@ import { RouterLink } from 'vue-router'
    
     <div class="botones flex flex-wrap items-center justify-center gap-4">
       <Button as-child variant="ghost" class="px-8 py-6 text-lg text-white hover:bg-blue-950 hover:text-yellow-400 justify-center">
-        <RouterLink to="/proceso">Proceso</RouterLink>
+        <RouterLink to="/proceso">Historia</RouterLink>
       </Button>
 
       <Button as-child variant="ghost" class="px-8 py-6 text-lg text-white hover:bg-blue-950 hover:text-yellow-400 justify-center">
@@ -27,7 +27,7 @@ import { RouterLink } from 'vue-router'
       </Button>
 
       <Button as-child variant="ghost" class="px-8 py-6 text-lg text-white hover:bg-blue-950 hover:text-yellow-400 justify-center">
-        <RouterLink to="/personajes">Personajes</RouterLink>
+        <RouterLink to="/personajes">Cuadros</RouterLink>
       </Button>
 
     
