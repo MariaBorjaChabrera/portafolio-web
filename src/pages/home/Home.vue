@@ -28,7 +28,7 @@ import { RouterLink } from 'vue-router'
       </Button>
 
       <Button as-child variant="ghost" class="px-8 py-6 text-lg text-white hover:bg-blue-950 hover:text-yellow-400 justify-center">
-        <RouterLink to="/personajes">Cuadros</RouterLink>
+        <RouterLink to="/personajes/about">Cuadros</RouterLink>
       </Button>
 
     
